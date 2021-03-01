@@ -1,0 +1,6 @@
+[submodule "Cypress/ydkjs-exercises"]
+	path = Cypress/ydkjs-exercises
+	url = https://github.com/AshTech25/Demo.git
+[submodule "Git/Demo"]
+	path = Git/Demo
+	url = https://github.com/AshTech25/Demo.git
