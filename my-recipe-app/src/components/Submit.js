@@ -1,22 +1,23 @@
 import React,{useContext} from 'react';
 import {ItemContext} from '../Context/ItemContext';
 
-export const Submit = () => {
+export const Submit = ({submit}) => {
 
     const [items,setItems] = useContext(ItemContext);
 
-    const onSubmit =  () =>
+    const onSubmit =  (e) =>
     {
-        console.log(items)
-
-
+        e.preventDefault();
+        submit(items);
     }
 
 
     return (
         <div>
             <form className='MyForm' onSubmit={onSubmit}>
-            <input type='submit' value = "Submit"  className="submitbtn" ></input>
+            
+            <input type='submit' value = "Find Recipe"  className="submitbtn" ></input>
+
             </form>
         </div>
     )

@@ -7,10 +7,7 @@ export const ItemContext = createContext();
 export const ItemProvider = props => {
     
     const [items,setItems] = useState([
-        // {
-        //     items:['palak','aloo'],
-        // }
-
+       
     ]);
     
     
