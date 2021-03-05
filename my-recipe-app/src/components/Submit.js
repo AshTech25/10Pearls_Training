@@ -13,7 +13,7 @@ export const Submit = ({submit}) => {
 
 
     return (
-        <div>
+        <div className='FindRecipe'>
             <form className='MyForm' onSubmit={onSubmit}>
             
             <input type='submit' value = "Find Recipe"  className="submitbtn" ></input>
