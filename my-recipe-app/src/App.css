@@ -102,5 +102,17 @@
 .RecipeBox{
     border : 4px solid purple;
     margin:20px;
+    /* width : 100%; */
     /* flex:3; */
+    width : 21%;
+   overflow: hidden;
+}
+.recipeImage{
+    width:100%
+}
+
+.Container{
+    display:flex;
+    /* align-items: center; */
+    justify-content: center;
 }

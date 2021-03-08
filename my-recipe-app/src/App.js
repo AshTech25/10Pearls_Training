@@ -8,9 +8,11 @@ import { v4 as uuidv4 } from 'uuid';
 import {Header} from './components/Header';
 import {Recipes} from './components/Recipes';
 
+//require('dotenv').config();
+
 
 function App() {
-  const MY_API_KEY = 'e95e11989a6947dfb4fb11052af8a4f5';  
+  const MY_API_KEY = 'd1ad19d05d13460e9710dde50988669c' //process.env.REACT_APP_API_KEY;  
   const [attributeForm,setAttributeForm]=useState([])
   const [counter,setCounter] = useState(0)
   const [recipes,setRecipes] = useState([]);
@@ -51,7 +53,7 @@ function App() {
       const data = await result.json();
       return (data);
       }
-      return (alert('Some ingredient of yours is inaccurate!'))
+      return (alert(result.status))
       }
       catch(ex){
         return (alert(ex.message));
@@ -63,7 +65,9 @@ function App() {
     <ItemProvider>
       
     <div className="App">
+    
       <Header title={'My Recipe Application'}/>
+      
       <div className='Container0'>
       <Button clicked={onClick} />
       </div>
