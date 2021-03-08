@@ -7,13 +7,11 @@ const IndRecipe = (props) => {
     const MY_API_KEY = process.env.REACT_APP_API_KEY;  
   
     useEffect(() => {
-        console.log(MY_API_KEY)
         const id = props.location.state.recipe;
         const getDetails = async(MY_API_KEY,id) =>
         { 
             const res = await fetchData(MY_API_KEY,id);
             const ingredients = res.nutrition.ingredients
-            console.log(ingredients);
             const newInfo = {
                 title: res.title,
                 healthScore : res.healthScore,
@@ -28,7 +26,7 @@ const IndRecipe = (props) => {
         }
         getDetails(MY_API_KEY,id);
     }
-    ,[])
+    )
     
     
     // This needs to be updated asap

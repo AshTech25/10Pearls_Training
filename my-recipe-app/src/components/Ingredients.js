@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const Ingredients = ({ingredients}) => {
     return (
-        <div>
+        <div >
             <h3>Ingredients:</h3>
             {ingredients.map(ingredient=>
                 <div key={uuidv4()}>

@@ -1,4 +1,4 @@
-import React,{useState,useContext,useEffect} from 'react';
+import React,{useState,useContext} from 'react';
 import {ItemContext} from '../Context/ItemContext';
 
 export const SearchBar = ({count}) => {
@@ -31,7 +31,6 @@ export const SearchBar = ({count}) => {
         // remove label
         setText('');
         setButform(false);
-        //setSubmitted(true);
     }
 
     return (
